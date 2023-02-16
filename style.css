@@ -1,0 +1,40 @@
+/*Modal Content*/
+.modal-container, .modal-content{
+    border: 1px solid black;
+    padding: 2px;
+}
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    z-index: -1;
+}
+.open-modal{
+    visibility: visible;
+    z-index: 10;
+}
+.modal-content{
+    width: 90vw;
+    height: 50vh;
+    background-color: white;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.modal-content img{
+    width: 50%;
+}
+.btn-clase{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    cursor: pointer;
+    padding: 5px;
+}
